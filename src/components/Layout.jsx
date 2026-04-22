@@ -1,10 +1,10 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import { Leaf, Map, Trophy, Menu, X } from 'lucide-react'
+import { Home, Map, Trophy, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import ParticleBackground from './ParticleBackground'
 
 const navItems = [
-  { to: '/', label: 'Home', icon: Leaf },
+  { to: '/', label: 'Home', icon: Home },
   { to: '/carbon', label: 'Carbon Tracker', icon: Map },
   { to: '/leaderboard', label: 'Leaderboard', icon: Trophy },
 ]
@@ -21,10 +21,12 @@ export default function Layout() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <NavLink to="/" className="flex items-center gap-2 group">
-              <div className="w-9 h-9 rounded-xl eco-gradient-btn flex items-center justify-center shadow-lg">
-                <Leaf className="w-5 h-5 text-white" />
-              </div>
+            <NavLink to="/" className="flex items-center gap-2.5 group">
+              <img
+                src="/ucpc-logo.png"
+                alt="UCPC Logo"
+                className="h-9 w-auto object-contain"
+              />
               <div className="hidden sm:block">
                 <span className="font-display font-bold text-lg eco-gradient-text">UCPC</span>
                 <span className="text-earth-400 text-sm ml-1.5 font-medium">Earth Day '26</span>
@@ -103,8 +105,8 @@ export default function Layout() {
           <p className="text-earth-500 text-xs">
             © 2026 UCPC Earth Day. Built for a greener campus.
           </p>
-          <div className="flex items-center gap-1.5 text-xs text-earth-500">
-            <Leaf className="w-3 h-3 text-forest-500" />
+          <div className="flex items-center gap-2 text-xs text-earth-500">
+            <img src="/ucpc-logo.png" alt="UCPC" className="h-4 w-auto opacity-60" />
             <span>Powered by green energy & good vibes</span>
           </div>
         </div>
