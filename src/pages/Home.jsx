@@ -115,8 +115,8 @@ export default function Home() {
         <div className="glass-card rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto">
           <div className="grid grid-cols-3 gap-4 text-center">
             {[
-              { value: '500+', label: 'Students Joined', icon: '🌱' },
-              { value: '12', label: 'Eco Challenges', icon: '🗺️' },
+              { value: '50+', label: 'Students Joined', icon: '🌱' },
+              { value: '4', label: 'Eco Challenges', icon: '🗺️' },
               { value: '0', label: 'Carbon Neutral Goal', icon: '🌍' },
             ].map(({ value, label, icon }) => (
               <div key={label}>
