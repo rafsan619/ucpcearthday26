@@ -73,7 +73,7 @@ export default function Leaderboard() {
 
   // Event end time: today at 6PM local
   const today = new Date()
-  const eventEnd = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 18, 0, 0)
+  const eventEnd = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 16, 0, 0)
 
   // Persist teams
   useEffect(() => {
